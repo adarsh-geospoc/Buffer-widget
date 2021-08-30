@@ -1,0 +1,15 @@
+{
+  "name": "Buffer",
+  "label": "Buffer",
+  "platform": "HTML",
+  "version": "1.0",
+  "wabVersion": "2.1",
+  "author": "Adarsh varma",
+  "description": "calculate zvalue on a map.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {  
+    "hasConfig": true,
+    "keepConfigAfterMapSwitched": false
+  }
+}

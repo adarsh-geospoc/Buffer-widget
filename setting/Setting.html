@@ -1,0 +1,67 @@
+<div>
+    <table class="setting-table input-table" cellspacing="0">
+        <tbody>
+            <tr>
+                <td class="first">${nls.geometryServiceURL}:</td>
+                <td class="second" colspan="2">
+                    <input type="text" data-dojo-type="dijit/form/ValidationTextBox"
+                        data-dojo-attach-point="geometryServiceURL" data-dojo-props="style:{width:'100%'}"
+                        required="true" />
+                </td>
+                <td></td>
+
+            </tr>
+            <tr class="example">
+                <td class="first"></td>
+                <td class="second">
+                    <span class="example">${nls.example}:
+                        http://&lt;myServerName&gt;/arcgis/rest/services/Utilities/Geometry/GeometryServer</span>
+                </td>
+
+            </tr>
+
+           
+            <tr>
+                <td class="first">${nls.SummarizeElevationURL}:</td>
+                <td class="second" colspan="2">
+                    <input type="text" data-dojo-type="dijit/form/ValidationTextBox"
+                        data-dojo-attach-point="SummarizeElevationURL" data-dojo-props="style:{width:'100%'}"
+                        required="true" />
+                </td>
+                <td></td>
+            </tr>
+            <tr class="example">
+                <td class="first"></td>
+                <td class="second">
+                    <span class="example">${nls.example}:
+                        http://&lt;myServerName&gt;/arcgis/rest/services/Tools/Elevation/GPServer/SummarizeElevation</span>
+                </td>
+
+            </tr>
+            
+            <tr>
+                <td class="first">${nls.profileTaskUrl}:</td>
+                <td class="second" colspan="2">
+                    <input type="text" data-dojo-type="dijit/form/ValidationTextBox"
+                        data-dojo-attach-point="profileTaskUrl" data-dojo-props="style:{width:'100%'}"
+                        required="true" />
+                </td>
+                <td></td>
+            </tr>
+            <tr class="example">
+                <td class="first"></td>
+                <td class="second">
+                    <span class="example">${nls.example}:
+                        http://&lt;myServerName&gt;/arcgis/rest/services/Tools/Elevation/GPServer/profileTaskUrl</span>
+                </td>
+
+            </tr>
+            <td></td>
+
+        </tbody>
+    </table>
+    <div data-dojo-attach-point="coordSystemsTable" class="separator"></div>
+
+
+
+</div>

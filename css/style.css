@@ -1,0 +1,131 @@
+/* jimu-widget-locatecoordinates */
+.jimu-widget-Buffer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .jimu-widget-Buffer .separator {
+    margin-top: 20px;
+  }
+
+  .esriElevationProfile, .esriElevationProfileChartNode {
+    height: 300px;
+    width: 100%;
+    min-height: 200px;
+    margin: 0px 0 0 0;
+    overflow: hidden;
+    background-color: #5a5757;
+    position: relative;
+
+    /* bottom: 8px; */
+    /* top: 68px; */
+  }
+  
+  .jimu-widget-Buffer .locatecoordinates-table > thead > tr > th,
+  .jimu-widget-Buffer .locatecoordinates-table > tbody > tr > td{
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+  }
+  
+  .jimu-widget-Buffer .input-table > tbody > tr > .first{
+    text-align: left;
+    padding-right:15px;
+    min-width: 100px;
+  }
+  
+  .jimu-widget-Buffer .input-table > tbody > tr > .second{
+    width:50px;
+  }
+  
+  .jimu-widget-Buffer .helpMessage{
+    margin-top: 20px;
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+  }
+  
+  .jimu-widget-Buffer .errorMessage{
+    display: none;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FF0000;
+  }
+
+  .EditButtonWidgetImage {
+    background-image: url('http://gisapps.cityofchicago.org/arcgis_js_api/library/3.18/esri/dijit/images/Directions/GreyPin16.png');
+    background-color: transparent;
+    border-color: white;
+    width: 15px;
+    height: 18px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 20px 10px 10px;
+  }
+  .EditButtonWidgetImage2 {
+    background-image: url('https://js.arcgis.com/3.35/esri/dijit/images/Measure_Distance16.png');
+    background-color: lightgrey;
+    border-color: white;
+    width: 15px;
+    height: 18px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 20px 10px 10px;
+  }
+
+  /*table will allign to the bottom rather than the top*/
+.jimu-widget-Buffer .locateIncidentContainer {
+  display: flex;
+  float: left;
+  margin-top: 20px;
+}
+
+.jimu-rtl .jimu-widget-Buffer .locateIncidentContainer {
+  display: flex;
+  float: right;
+  margin-top: 20px;
+}
+.jimu-widget-Buffer .imgContainer{
+  display: table;
+  width: 130px;
+  padding-top: 10px;
+}
+.jimu-widget-Buffer .btn32img {
+  padding: 8px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-color: #646464;
+}
+
+.jimu-widget-Buffer .lightThemeBackground{
+  background-color: #262626;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+
+.jimu-widget-Buffer .btn32img:hover {
+  background-color: #262626;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.jimu-widget-Buffer .btn32imgBlack {
+  padding: 8px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ol li{
+  font-size: large;
+}
+

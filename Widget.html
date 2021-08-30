@@ -1,0 +1,111 @@
+<div tabindex="0">
+    <table>
+        <tr>
+            <td class="first" style="margin-top: 10px;"><label
+                    data-dojo-attach-point="coordSystemLabel">${nls.coordinateSystem}:</label></td>
+            <td class="second"><select style="width: 270px;" data-dojo-attach-point="coordSystemSelect"
+                    data-dojo-type="dijit/form/Select"></select></td>
+        </tr>
+        <tr>
+            <td class="first"><label data-dojo-attach-point="coordTypeLabel">${nls.coordinateType}</label></td>
+            <td class="second"><select style="width: 270px;" data-dojo-attach-point="coordTypeSelect"
+                    data-dojo-type="dijit/form/Select"></select></td>
+        </tr>
+    </table>
+    <div>
+        <table style="margin-top: 10px;">
+            <tr>
+                <td class="first"><label style="margin-right: 70px;" data-dojo-attach-point="xCoordLabel"></label></td>
+                <td class="first"><label style="margin-right: 70px;" data-dojo-attach-point="yCoordLabel"></label></td>
+            </tr>
+            <tr>
+                <td class="second"><input data-dojo-attach-point="xCoordTextBox" data-dojo-type="dijit/form/TextBox"
+                        required="true" data-dojo-props="constraints:{pattern:'0#.####'}" /></td>
+                <td class="second"><input data-dojo-attach-point="yCoordTextBox" data-dojo-type="dijit/form/TextBox"
+                        required="true" data-dojo-props="constraints:{pattern:'0#.####'}" /></td>
+                <td class="btn32 displayTC">
+                    <div style="margin-left: 17px;" role="button" tabindex="0" class="btn32img"
+                        data-dojo-attach-point="SA_btn0"> </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-top: 10px;">
+        <button style="margin-left:35px" data-dojo-attach-point="locate" data-dojo-type="dijit/form/Button"
+            type="button">Locate</button>
+        <button style="margin-left:40px" data-dojo-attach-point="clearButton" data-dojo-type="dijit/form/Button"
+            type="button">Clear
+            Coordinates</button>
+
+    </div>
+    <div style="margin-top: 10px;" class="controlGroup controlGroupHidden" data-dojo-attach-point="">
+        <label>${nls.numberOfRingsLabel}</label>
+        <div class="controlItem" data-dojo-attach-point="">
+            <input id="rings" style="width: calc(100% - 18px);" aria-label="${nls.numberOfRingsLabel}"
+                data-dojo-attach-point="" type="text" data-dojo-type="dijit/form/NumberTextBox" name="numRings"
+                required="true" , value="5" data-dojo-props="constraints:{min:1, max: 100, places: 0}" />
+        </div>
+    </div>
+    <div style="margin-top: 10px;" class="controlGroup controlGroupHidden" data-dojo-attach-point="">
+        <label>${nls.distanceBetweenRingsLabel}</label>
+        <div class="controlItem" data-dojo-attach-point="">
+            <input id="distance" aria-label="${nls.distanceBetweenRingsLabel}" style="width: calc(100% - 125px);"
+                data-dojo-type="dijit/form/NumberTextBox" required="true" value="100"
+                data-dojo-props=" constraints:{pattern:'0#.####'}, invalidMessage: '${nls.ringsDecimalErrorMessage}'"
+                data-dojo-attach-point="" />
+            <select id="unit" style="width:100px; height: 30px;">
+                <option value="UNIT_STATUTE_MILE">Miles</option>
+                <option value="UNIT_FOOT">Feet</option>
+                <option value="UNIT_KILOMETER">Kilometers</option>
+                <option value="UNIT_METER">Meters</option>
+                <option value="UNIT_NAUTICAL_MILE">Nautical Miles</option>
+                <option value="UNIT_US_NAUTICAL_MILE">US Nautical Miles</option>
+                <option value="UNIT_DEGREE">Degrees</option>
+            </select>
+        </div>
+    </div>
+    
+    <div>
+
+    </div>
+    <div style="margin-top: 15px; " id="footer" class="shadow" >
+        <span style="font-size: large;" id='elevSpan'>Transparency</span><br><br>
+
+        <!-- create rules and labels above horizontal slider -->
+        <ol data-dojo-type="dijit/form/HorizontalRuleLabels" data-dojo-props="
+        container: 'topDecoration',
+        count: 5,
+        numericMargin: 1" style="height: 1.2em; ">
+        </ol>
+        <div data-dojo-type="dijit/form/HorizontalRule" data-dojo-props="
+        container: 'topDecoration',
+        count: 5" style="height: 5px; margin: 0 12px;"></div>
+
+        <!-- declaratively create a slider without buttons, values from 0-10 -->
+        <input id="hslider" style="width: 100%;" type="range" value="2.5" data-dojo-type="dijit/form/HorizontalSlider" data-dojo-props="
+        minimum: 0,
+        maximum: 10,
+        showButtons: false,
+        discreteValues: 5">
+
+        <!-- create rules and labels below horizontal slider -->
+        <div id="hslider2" data-dojo-type="dijit/form/HorizontalRule" data-dojo-props="
+        container: 'bottomDecoration',
+        count: 0" ></div>
+        <ol data-dojo-type="dijit/form/HorizontalRuleLabels" data-dojo-props="
+        container: 'bottomDecoration'" >
+            <li> " "+ Opaque</li>            
+            <li>Transparent</li>
+        </ol>
+    </div>
+    <div style="margin-top: 15px; ">
+        <button style="margin:20px" data-dojo-attach-point="applybuffer" data-dojo-type="dijit/form/Button"
+            type="button">Apply Buffer</button>
+        <button style="margin:20px" data-dojo-attach-point="cleargraphics" data-dojo-type="dijit/form/Button"
+            type="button">Clear Graphics</button>
+    </div>
+
+
+
+
+</div>

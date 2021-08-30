@@ -1,0 +1,77 @@
+{
+    "geometryServiceURL":"https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry",
+    "profileTaskUrl":"http://elevation.arcgis.com/arcgis/rest/services/Tools/Elevation/GPServer",
+    "coordinateSystems": [
+      {
+        "label":"Nahrwan 1967 UTM Zone 39N", 
+        "wkid":"27039",
+        "xmin":"551282.49", 
+        "xmax":"2502241.83", 
+        "ymin":"1112682.72", 
+        "ymax":"3000000.12",
+        "type":"projected"
+      },
+        {
+          "label":"WGS84", 
+          "wkid":"4326",
+          "xmin":"-180", 
+          "xmax":"180", 
+          "ymin":"-53", 
+          "ymax":"31"
+        }
+        
+      ],
+      "gcsCoordinateType": [      
+       
+        {
+            "label":"Long/Lat (Decimal Degrees)", 
+            "type":"DD"
+        },
+        {
+            "label":"Long/Lat (Degrees Decimal Minutes) ", 
+            "type":"DDM"
+        },
+        {
+            "label":"Long/Lat (Degrees Minutes Seconds)", 
+            "type":"DDS"
+        }
+		
+	  ],
+
+    "projectedCoordinateType": [
+      
+      {
+        "label":"X/Y (Meters)", 
+        "type":"X/Y (Meters)"
+      }
+  
+    ],
+    "GcsWkid":["4270","4326"],
+      
+      "lengthUnit":[
+        {
+          "notation": "Miles",
+          "value": "UNIT_STATUTE_MILE"
+        },
+        {
+          "notation": "Kilometers",
+          "value": "UNIT_KILOMETER"
+        },
+        {
+          "notation": "Meters",
+          "value": "UNIT_METER"
+        },
+        {
+          "notation": "Nautical Miles",
+          "value": "UNIT_NAUTICAL_MILE"
+        },
+        {
+          "notation": "Degrees",
+          "value": "UNIT_DEGREE"
+        },
+        {
+          "notation": "Feet",
+          "value": "UNIT_FOOT"
+        }
+      ]
+}
